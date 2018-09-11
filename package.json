@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel serve src/index.html",
-    "build": "parcel build src/index.html --out-dir dist --public-url dobetterbius.org --experimental-scope-hoisting"
+    "build": "parcel build src/index.html --out-dir dist --public-url / --experimental-scope-hoisting"
   },
   "author": "Alex Dytrych <alex@dytry.ch>",
   "license": "ISC",
