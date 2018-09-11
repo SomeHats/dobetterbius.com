@@ -29,7 +29,8 @@ main {
   margin-bottom: -1px;
 }
 
-body::before {
+body::before,
+body::after {
   content: " ";
   position: fixed;
   top: -500px;
@@ -43,6 +44,13 @@ body::before {
     rgba(126, 0, 255, 1) calc(50vw),
     rgba(255, 0, 196, 1) calc(50vw + (680px / 2))
   );
+}
+
+/* by repeating this bar twice, once fixed and once absolute,
+ * we get the nice gradient overscroll effect on mobile safari
+ * as well as other browsers. */
+body::after {
+  position: absolute;
 }
 
 article {
