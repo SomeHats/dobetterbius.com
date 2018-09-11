@@ -64,16 +64,21 @@ h1 {
   display: block;
   margin: -1rem;
   padding: 1rem;
-  color: transparent;
-  background-color: rgba(126, 0, 255);
-  background-image: linear-gradient(
-    90deg,
-    rgba(14, 0, 255, 1) 0%,
-    rgba(126, 0, 255, 1) 50%,
-    rgba(255, 0, 196, 1) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: rgba(126, 0, 255);
+}
+
+@supports (background-clip: text) {
+  .Header-main {
+    color: transparent;
+    background-color: rgba(126, 0, 255);
+    background-image: linear-gradient(
+      90deg,
+      rgba(14, 0, 255, 1) 0%,
+      rgba(126, 0, 255, 1) 50%,
+      rgba(255, 0, 196, 1) 100%
+    );
+    background-clip: text;
+  }
 }
 
 .Header-secondary {
@@ -122,14 +127,24 @@ li::before {
 }
 
 @media screen and (max-width: 680px) {
-  body::before,
-  .Header-main {
+  body::before {
     background-image: linear-gradient(
       90deg,
       rgba(14, 0, 255, 1) 0,
       rgba(126, 0, 255, 1) 50vw,
       rgba(255, 0, 196, 1) 100vw
     );
+  }
+
+  @supports (background-clip: text) {
+    .Header-main {
+      background-image: linear-gradient(
+        90deg,
+        rgba(14, 0, 255, 1) 0,
+        rgba(126, 0, 255, 1) 50vw,
+        rgba(255, 0, 196, 1) 100vw
+      );
+    }
   }
 
   .Header {
