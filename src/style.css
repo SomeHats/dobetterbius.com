@@ -158,3 +158,15 @@ li::before {
     font-size: 14px;
   }
 }
+
+@media print {
+  html,
+  body {
+    -webkit-print-color-adjust: exact;
+    font-size: 12px;
+  }
+
+  body::before {
+    position: absolute;
+  }
+}
