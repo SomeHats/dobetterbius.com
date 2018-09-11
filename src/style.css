@@ -13,13 +13,7 @@ html {
   font-size: 16px;
   font-family: "Hind", sans-serif;
   color: #333;
-  background-color: rgba(126, 0, 255);
-  background-image: linear-gradient(
-    90deg,
-    rgba(14, 0, 255, 1) calc(50vw - (680px / 2)),
-    rgba(126, 0, 255, 1) calc(50vw),
-    rgba(255, 0, 196, 1) calc(50vw + (680px / 2))
-  );
+  background: white;
 }
 
 main {
@@ -29,8 +23,7 @@ main {
   margin-bottom: -1px;
 }
 
-body::before,
-body::after {
+body::before {
   content: " ";
   position: fixed;
   top: -500px;
@@ -44,13 +37,6 @@ body::after {
     rgba(126, 0, 255, 1) calc(50vw),
     rgba(255, 0, 196, 1) calc(50vw + (680px / 2))
   );
-}
-
-/* by repeating this bar twice, once fixed and once absolute,
- * we get the nice gradient overscroll effect on mobile safari
- * as well as other browsers. */
-body::after {
-  position: absolute;
 }
 
 article {
@@ -110,7 +96,6 @@ strong {
 }
 
 @media screen and (max-width: 680px) {
-  body,
   body::before,
   .Header-main {
     background-image: linear-gradient(
