@@ -56,7 +56,7 @@ h1 {
   margin-top: 0;
   font-size: 5rem;
   line-height: 0.9;
-  /* text-align: center; */
+  margin-bottom: 5rem;
 }
 
 .Header-main {
@@ -80,9 +80,14 @@ h1 {
   font-size: 0.8em;
 }
 
-p {
-  line-height: 1.5;
+article {
+  line-height: 1.6;
   font-size: 1.2rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 
 .lead {
@@ -93,6 +98,26 @@ p {
 
 strong {
   font-weight: 700;
+}
+
+ul {
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li::before {
+  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAxNiI+PHBvbHlsaW5lIHBvaW50cz0iMiAyIDEyIDggMiAxNCIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjZmYwMmM0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iNCIvPjwvc3ZnPg==");
+  width: calc(0.5em * 1.4);
+  height: calc(0.5em * 1.6);
+  display: block;
+  position: absolute;
+  margin-left: -1.8rem;
+  margin-top: 0.1rem;
 }
 
 @media screen and (max-width: 680px) {
