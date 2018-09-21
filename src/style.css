@@ -53,6 +53,67 @@ h1 {
   font-weight: 900;
 }
 
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #6000ff;
+}
+
+a:hover {
+  color: rgba(255, 0, 196, 1);
+}
+
+a:visited {
+  color: #cc00ec;
+}
+
+article {
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+ul {
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li::before {
+  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAxNiI+PHBvbHlsaW5lIHBvaW50cz0iMiAyIDEyIDggMiAxNCIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjZmYwMmM0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iNCIvPjwvc3ZnPg==");
+  width: calc(0.5em * 1.4);
+  height: calc(0.5em * 1.6);
+  display: block;
+  position: absolute;
+  margin-left: -1.8rem;
+  margin-top: 0.1rem;
+}
+
 .Header {
   margin-top: 0;
   font-size: 5rem;
@@ -86,44 +147,10 @@ h1 {
   font-size: 0.8em;
 }
 
-article {
-  line-height: 1.6;
-  font-size: 1.2rem;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-}
-
 .lead {
   /* font-weight: 300; */
   font-size: 1.4rem;
   text-align: justify;
-}
-
-strong {
-  font-weight: 700;
-}
-
-ul {
-  margin-top: -1rem;
-  margin-bottom: 1.5rem;
-  list-style: none;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-
-li::before {
-  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAxNiI+PHBvbHlsaW5lIHBvaW50cz0iMiAyIDEyIDggMiAxNCIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjZmYwMmM0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iNCIvPjwvc3ZnPg==");
-  width: calc(0.5em * 1.4);
-  height: calc(0.5em * 1.6);
-  display: block;
-  position: absolute;
-  margin-left: -1.8rem;
-  margin-top: 0.1rem;
 }
 
 @media screen and (max-width: 680px) {
